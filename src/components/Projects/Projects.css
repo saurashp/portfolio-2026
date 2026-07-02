@@ -1,0 +1,177 @@
+.projects-slider-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.projects-slider-container {
+  overflow-x: auto;
+  width: 100%;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  padding: 20px 0;
+  -webkit-overflow-scrolling: touch; /* smooth mobile momentum */
+  scroll-padding: 0 20px;
+}
+
+.projects-slider-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.projects-slider {
+  display: flex;
+  gap: 40px; /* Big gaps as requested */
+  padding: 0 20px;
+}
+
+.project-card {
+  flex: 0 0 380px; /* Fixed width for slider cards */
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  min-height: 420px;
+  border-radius: 20px;
+  justify-content: space-between;
+  transition: var(--transition-smooth);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Glow variations */
+.cyan-glow:hover {
+  box-shadow: 0 20px 40px -15px rgba(3, 179, 195, 0.3);
+  border-color: var(--color-cyan) !important;
+}
+
+.magenta-glow:hover {
+  box-shadow: 0 20px 40px -15px rgba(216, 86, 191, 0.3);
+  border-color: var(--color-magenta) !important;
+}
+
+.mixed-glow:hover {
+  box-shadow: 0 20px 40px -15px rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.project-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+}
+
+.project-link-icon {
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+}
+
+.project-link-icon:hover {
+  color: var(--text-primary);
+  transform: scale(1.1);
+}
+
+.project-desc {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-tag {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+}
+
+/* Floating Navigation Buttons */
+.slider-nav-btn {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  background: rgba(13, 13, 18, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.slider-nav-btn:hover {
+  color: var(--color-cyan);
+  border-color: var(--color-cyan);
+  box-shadow: var(--glow-cyan);
+  transform: scale(1.05);
+}
+
+.slider-nav-btn.prev {
+  left: -23px;
+}
+
+.slider-nav-btn.next {
+  right: -23px;
+}
+
+@media (max-width: 1024px) {
+  .slider-nav-btn.prev {
+    left: -10px;
+  }
+  .slider-nav-btn.next {
+    right: -10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-nav-btn {
+    display: none; /* Hide scroll arrows on mobile, swipe gesture works natively */
+  }
+  
+  .project-card {
+    flex: 0 0 300px; /* Narrower cards on smaller mobile widths */
+    padding: 25px;
+    min-height: 380px;
+  }
+  
+  .projects-slider {
+    gap: 20px; /* Slightly smaller gap on mobile */
+  }
+}
