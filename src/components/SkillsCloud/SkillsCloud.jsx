@@ -291,7 +291,7 @@ const SkillsCloud = () => {
       <canvas ref={canvasRef} className="skills-cloud-canvas" />
       <div className="skills-cloud-footer">
         <span className="skills-cloud-tooltip">
-          {hoveredSkill ? `Active Skill: ${hoveredSkill}` : 'Hover to rotate sphere'}
+          {hoveredSkill ? `Active Skill: ${hoveredSkill}` : 'Hover to rotate'}
         </span>
       </div>
     </div>

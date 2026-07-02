@@ -3,7 +3,7 @@
 :root {
   /* Colors */
   --bg-dark: #050508;
-  --bg-card: rgba(13, 13, 18, 0.3);
+  --bg-card: rgba(8, 8, 12, 0.75);
   --bg-navbar: rgba(6, 6, 9, 0.6);
   --border-glow: rgba(255, 255, 255, 0.05);
   --border-light: rgba(255, 255, 255, 0.08);
@@ -73,11 +73,11 @@ body {
 /* Glassmorphism base utility */
 .glass-panel {
   background: var(--bg-card);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--border-light);
   border-radius: 16px;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
   transition: var(--transition-smooth);
 }
 
