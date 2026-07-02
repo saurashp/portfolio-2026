@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   z-index: 1;
-  pointer-events: none; /* Let clicks pass through if needed, or handle mouse triggers */
+  pointer-events: none;
 }
 
 #lights canvas {

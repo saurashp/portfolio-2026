@@ -29,15 +29,14 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* HIGHLIGHTED Open to work Status */}
+        {/* HIGHLIGHTED Status */}
         <div className="hero-status-highlight-container">
           <div className="hero-status-highlight float-animation-slow">
             <div className="status-indicator">
-              <span className="status-ping-ring"></span>
               <span className="status-dot"></span>
             </div>
             <span className="status-text">
-              Actively Seeking New Opportunities &bull; <strong className="glow-text">Open to Work</strong>
+              Actively Seeking New Opportunities
             </span>
           </div>
         </div>

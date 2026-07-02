@@ -89,29 +89,8 @@
   height: 10px;
   background-color: var(--color-cyan);
   border-radius: 50%;
-  box-shadow: 0 0 10px var(--color-cyan);
+  box-shadow: 0 0 8px var(--color-cyan), 0 0 18px var(--color-cyan);
   z-index: 2;
-}
-
-.status-ping-ring {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--color-cyan);
-  animation: status-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
-  z-index: 1;
-}
-
-@keyframes status-ping {
-  0% {
-    transform: scale(1);
-    opacity: 0.8;
-  }
-  70%, 100% {
-    transform: scale(3.5);
-    opacity: 0;
-  }
 }
 
 .glow-text {
