@@ -2,11 +2,12 @@
   position: relative;
   z-index: 2;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 100px;
+  padding: 120px 20px 60px;
 }
 
 .hero-content {
@@ -78,15 +79,27 @@
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding: 100px 16px 40px;
+  }
+  .hero-badge {
+    margin-bottom: 16px;
+    padding: 6px 12px;
+    font-size: 11px;
+  }
   .hero-title {
     font-size: 42px;
     letter-spacing: -1px;
+    margin-bottom: 12px;
   }
   .hero-subtitle {
     font-size: 22px;
+    margin-bottom: 16px;
   }
   .hero-description {
     font-size: 15px;
+    margin-bottom: 24px;
   }
   .hero-actions {
     flex-direction: column;

@@ -207,4 +207,9 @@ section {
   .section-title {
     font-size: 32px;
   }
+  .btn-neon {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
 }
+

@@ -33,3 +33,13 @@
   font-size: 14px;
   color: var(--text-secondary);
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 16px 12px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+  }
+}
+

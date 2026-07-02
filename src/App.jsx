@@ -5,6 +5,8 @@ import About from './components/About/About';
 import Resume from './components/Resume/Resume';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import './App.css';
+
 
 // Static options declared outside component scope to avoid re-renders
 const HYPERSPEED_OPTIONS = {
