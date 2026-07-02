@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Hyperspeed from './components/Hyperspeed/Hyperspeed';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
@@ -5,6 +6,7 @@ import About from './components/About/About';
 import Resume from './components/Resume/Resume';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import Loader from './components/Loader/Loader';
 import './App.css';
 
 
@@ -46,8 +48,12 @@ const HYPERSPEED_OPTIONS = {
 };
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <div className="app-container">
+      {isLoading && <Loader onFinished={() => setIsLoading(false)} />}
+
       {/* WebGL Canvas Background */}
       <div className="bg-canvas-container">
         <Hyperspeed effectOptions={HYPERSPEED_OPTIONS} />

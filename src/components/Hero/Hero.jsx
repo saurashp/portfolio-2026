@@ -5,11 +5,6 @@ const Hero = () => {
   return (
     <section id="home" className="hero-section">
       <div className="hero-content">
-        <div className="hero-badge float-animation">
-          <span className="badge-glow-dot"></span>
-          Open to work
-        </div>
-        
         <h1 className="hero-title">
           Hi, I am <span className="gradient-text">Saurash Preet</span>
         </h1>
@@ -32,6 +27,19 @@ const Hero = () => {
           <a href="#contact" className="btn-neon btn-neon-cyan">
             Get in touch <Mail size={16} />
           </a>
+        </div>
+
+        {/* HIGHLIGHTED Open to work Status */}
+        <div className="hero-status-highlight-container">
+          <div className="hero-status-highlight float-animation-slow">
+            <div className="status-indicator">
+              <span className="status-ping-ring"></span>
+              <span className="status-dot"></span>
+            </div>
+            <span className="status-text">
+              Actively Seeking New Opportunities &bull; <strong className="glow-text">Open to Work</strong>
+            </span>
+          </div>
         </div>
       </div>
     </section>

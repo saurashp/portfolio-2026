@@ -17,32 +17,116 @@
   align-items: center;
 }
 
-/* Badge styling */
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: rgba(3, 179, 195, 0.1);
-  border: 1px solid rgba(3, 179, 195, 0.3);
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-family: var(--font-display);
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--color-cyan);
-  margin-bottom: 24px;
-  box-shadow: 0 0 15px rgba(3, 179, 195, 0.1);
+/* Highlighted Status Card styling */
+.hero-status-highlight-container {
+  margin-top: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.badge-glow-dot {
-  width: 8px;
-  height: 8px;
+.hero-status-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(3, 179, 195, 0.08);
+  border: 1.5px solid rgba(3, 179, 195, 0.4);
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-primary);
+  box-shadow: 0 0 25px rgba(3, 179, 195, 0.15), inset 0 0 10px rgba(3, 179, 195, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: var(--transition-smooth);
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-status-highlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.hero-status-highlight:hover::before {
+  left: 150%;
+  transition: 0.8s;
+}
+
+.hero-status-highlight:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 35px rgba(3, 179, 195, 0.35), inset 0 0 15px rgba(3, 179, 195, 0.2);
+}
+
+.status-indicator {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
   background-color: var(--color-cyan);
   border-radius: 50%;
-  box-shadow: 0 0 8px var(--color-cyan);
-  animation: pulse 2s infinite;
+  box-shadow: 0 0 10px var(--color-cyan);
+  z-index: 2;
+}
+
+.status-ping-ring {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-cyan);
+  animation: status-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  z-index: 1;
+}
+
+@keyframes status-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  70%, 100% {
+    transform: scale(3.5);
+    opacity: 0;
+  }
+}
+
+.glow-text {
+  color: var(--color-cyan);
+  text-shadow: 0 0 10px rgba(3, 179, 195, 0.6);
+  font-weight: 800;
+}
+
+.float-animation-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
 }
 
 .hero-title {
@@ -83,10 +167,14 @@
     min-height: auto;
     padding: 130px 16px 40px;
   }
-  .hero-badge {
-    margin-bottom: 16px;
-    padding: 6px 12px;
-    font-size: 11px;
+  .hero-status-highlight-container {
+    margin-top: 32px;
+  }
+  .hero-status-highlight {
+    padding: 8px 16px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    gap: 10px;
   }
   .hero-title {
     font-size: 42px;
