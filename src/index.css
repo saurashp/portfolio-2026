@@ -3,7 +3,7 @@
 :root {
   /* Colors */
   --bg-dark: #050508;
-  --bg-card: rgba(13, 13, 18, 0.65);
+  --bg-card: rgba(13, 13, 18, 0.3);
   --bg-navbar: rgba(6, 6, 9, 0.6);
   --border-glow: rgba(255, 255, 255, 0.05);
   --border-light: rgba(255, 255, 255, 0.08);
