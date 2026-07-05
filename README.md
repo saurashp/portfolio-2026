@@ -2,7 +2,7 @@
 
 A modern, high-performance, and visually immersive developer portfolio showcasing full-stack development (MERN stack), DevOps capabilities, and cloud engineering expertise.
 
-[Live Portfolio](https://github.com/saurashp/portfolio-2026) <!-- Replace with live URL if hosted, otherwise default to repository -->
+[Live Portfolio]([https://github.com/saurashp/portfolio-2026](https://saurashp.vercel.app/))
 
 ---
 
