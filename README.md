@@ -46,13 +46,24 @@ Ensure you have [Node.js](https://nodejs.org/) installed (v18+ recommended).
    npm install
    ```
 
-3. **Start the development server:**
+3. **Configure Environment Variables:**
+   Create a `.env` file in the root directory (you can copy `.env.example` as a template):
+   ```bash
+   cp .env.example .env
+   ```
+   Open the `.env` file and insert your [Web3Forms](https://web3forms.com/) Access Key:
+   ```env
+   VITE_WEB3FORMS_ACCESS_KEY=your_web3forms_key
+   ```
+   *Note: For production deployments (e.g., Vercel), add `VITE_WEB3FORMS_ACCESS_KEY` to your project's Environment Variables dashboard.*
+
+4. **Start the development server:**
    ```bash
    npm run dev
    ```
    Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-4. **Build for production:**
+5. **Build for production:**
    ```bash
    npm run build
    ```
