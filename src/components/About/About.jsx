@@ -5,7 +5,7 @@ import SkillsCloud from '../SkillsCloud/SkillsCloud';
 const About = () => {
   const stats = [
     { value: '2022-2026', label: 'B.Tech CCE Student' },
-    { value: '3+', label: 'Key Projects' },
+    { value: '5', label: 'Key Projects' },
     { value: '2', label: 'Internships/Trainings' },
     { value: '3', label: 'Meta Certifications' },
   ];

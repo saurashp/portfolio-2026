@@ -15,13 +15,22 @@ const Projects = () => {
   
   const projects = [
     {
+      title: 'RateLimit Pro',
+      description: 'A production-inspired API rate-limiting simulator and dashboard. Engineered with configurable global and route-level policies, real-time traffic monitoring, anomaly detection, and interactive Chart.js dashboards to track usage trends and block rates.',
+      tags: ['React.js', 'Express.js', 'Chart.js', 'JavaScript'],
+      github: 'https://github.com/saurashp/RateLimiter',
+      gradient: 'linear-gradient(135deg, rgba(3, 179, 195, 0.15) 0%, rgba(103, 80, 162, 0.15) 100%)',
+      borderColor: 'rgba(3, 179, 195, 0.3)',
+      glowClass: 'cyan-glow'
+    },
+    {
       title: 'AI Sentiment Analysis Chat Application',
       description: 'A real-time AI chat application with toxicity detection. Features secure authentication, real-time communication using Socket.IO, image sharing, and a robust MongoDB backend.',
       tags: ['React.js', 'Node.js', 'Socket.IO', 'MongoDB', 'AI API'],
       github: 'https://github.com/saurashp/sentiment-analysis-chat-application',
-      gradient: 'linear-gradient(135deg, rgba(3, 179, 195, 0.15) 0%, rgba(103, 80, 162, 0.15) 100%)',
-      borderColor: 'rgba(3, 179, 195, 0.3)',
-      glowClass: 'cyan-glow'
+      gradient: 'linear-gradient(135deg, rgba(3, 179, 195, 0.1) 0%, rgba(216, 86, 191, 0.1) 100%)',
+      borderColor: 'rgba(255, 255, 255, 0.15)',
+      glowClass: 'mixed-glow'
     },
     {
       title: 'Weather App with DevOps',
@@ -37,9 +46,9 @@ const Projects = () => {
       description: 'A secure MERN-based CRUD application that enables users to manage their contacts. Features RESTful APIs and seamless MongoDB integration with React.',
       tags: ['React.js', 'Express.js', 'Node.js', 'MongoDB', 'REST API'],
       github: 'https://github.com/saurashp/Contact-Management',
-      gradient: 'linear-gradient(135deg, rgba(3, 179, 195, 0.1) 0%, rgba(216, 86, 191, 0.1) 100%)',
-      borderColor: 'rgba(255, 255, 255, 0.15)',
-      glowClass: 'mixed-glow'
+      gradient: 'linear-gradient(135deg, rgba(3, 179, 195, 0.15) 0%, rgba(103, 80, 162, 0.15) 100%)',
+      borderColor: 'rgba(3, 179, 195, 0.3)',
+      glowClass: 'cyan-glow'
     },
     {
       title: 'UniversalSearchGUI',

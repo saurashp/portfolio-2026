@@ -22,7 +22,8 @@ const SKILLS = [
   { name: 'Git', rgb: '103, 80, 162' },
   { name: 'GitHub', rgb: '103, 80, 162' },
   { name: 'Postman', rgb: '103, 80, 162' },
-  { name: 'REST APIs', rgb: '216, 86, 191' }
+  { name: 'REST APIs', rgb: '216, 86, 191' },
+  { name: 'Chart.js', rgb: '216, 86, 191' }
 ];
 
 const SkillsCloud = () => {

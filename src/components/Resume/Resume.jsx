@@ -20,15 +20,6 @@ const Resume = () => {
         'Completed a 6-week industrial training focused on SAP ERP and Oracle Database systems.',
         'Worked with Oracle Database and SAP ERP to understand enterprise workflows, database management, and SQL-based data retrieval.'
       ]
-    },
-    {
-      role: 'Cloud Computing Intern',
-      company: 'Corizo',
-      duration: 'May 2023 – Jul 2023',
-      points: [
-        'Completed intensive training and practical projects under Cloud Computing.',
-        'Worked with virtual instances, cloud infrastructure orchestration, and basic deployment systems.'
-      ]
     }
   ];
 
