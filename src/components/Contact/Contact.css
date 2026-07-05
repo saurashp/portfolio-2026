@@ -143,3 +143,24 @@ a.info-value:hover {
     padding: 30px 20px;
   }
 }
+
+.form-status {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  text-align: left;
+  animation: fadeIn 0.3s ease;
+}
+
+.status-success {
+  color: var(--color-cyan);
+}
+
+.status-error {
+  color: var(--color-magenta);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
