@@ -6,7 +6,7 @@ const About = () => {
   const stats = [
     { value: '2022-2026', label: 'B.Tech CCE Student' },
     { value: '6', label: 'Key Projects' },
-    { value: '2', label: 'Internships/Trainings' },
+    { value: '1', label: 'Internship' },
     { value: '3', label: 'Meta Certifications' },
   ];
 
