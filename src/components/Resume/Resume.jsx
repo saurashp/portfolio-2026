@@ -11,6 +11,15 @@ const Resume = () => {
         'Developed and deployed 3 responsive web applications.',
         'Improved UI/UX and optimized frontend performance.'
       ]
+    },
+    {
+      role: 'Trainee',
+      company: 'SAIL Rourkela Steel Plant',
+      duration: 'Jun 2024 – Jul 2024',
+      points: [
+        'Completed a 6-week industrial training focused on SAP ERP and Oracle Database systems.',
+        'Worked with Oracle Database and SAP ERP to understand enterprise workflows, database management, and SQL-based data retrieval.'
+      ]
     }
   ];
 
