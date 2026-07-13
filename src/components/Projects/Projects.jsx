@@ -15,6 +15,15 @@ const Projects = () => {
   
   const projects = [
     {
+      title: 'Short.ly',
+      description: 'A premium full-stack URL shortener featuring a sleek glassmorphic dark-mode interface, real-time visitor analytics, custom aliases, and auto-expiration. Powered by React, Node.js, Express, MongoDB, and Redis caching, it includes a robust admin console for platform-wide management.',
+      tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redis'],
+      github: 'https://github.com/saurashp/URL-Shortner',
+      gradient: 'linear-gradient(135deg, rgba(216, 86, 191, 0.15) 0%, rgba(103, 80, 162, 0.15) 100%)',
+      borderColor: 'rgba(216, 86, 191, 0.3)',
+      glowClass: 'magenta-glow'
+    },
+    {
       title: 'RateLimit Pro',
       description: 'A production-inspired API rate-limiting simulator and dashboard. Engineered with configurable global and route-level policies, real-time traffic monitoring, anomaly detection, and interactive Chart.js dashboards to track usage trends and block rates.',
       tags: ['React.js', 'Express.js', 'Chart.js', 'JavaScript'],

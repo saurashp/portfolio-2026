@@ -7,6 +7,7 @@ const SKILLS = [
   { name: 'Node.js', rgb: '216, 86, 191' },
   { name: 'Express.js', rgb: '216, 86, 191' },
   { name: 'MongoDB', rgb: '216, 86, 191' },
+  { name: 'Redis', rgb: '216, 86, 191' },
   { name: 'MySQL', rgb: '103, 80, 162' },
   { name: 'Firebase', rgb: '3, 179, 195' },
   { name: 'SQL', rgb: '103, 80, 162' },

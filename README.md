@@ -9,7 +9,7 @@ A modern, high-performance, and visually immersive developer portfolio showcasin
 ## ✨ Features
 
 - **Interactive 3D Skills Cloud**: A dynamic, interactive HTML5 canvas tag cloud presenting technical expertise with smooth rotation and hover physics.
-- **Featured Projects Slider**: A sleek, horizontal scrolling carousel showcasing premium production-inspired projects (such as `RateLimit Pro`, `AI Sentiment Analysis Chat`, and `Weather App with DevOps`) complete with source links and custom neon glows.
+- **Featured Projects Slider**: A sleek, horizontal scrolling carousel showcasing premium production-inspired projects (such as `Short.ly`, `RateLimit Pro`, `AI Sentiment Analysis Chat`, and `Weather App with DevOps`) complete with source links and custom neon glows.
 - **Synced Interactive Timeline**: A clean, chronological display of professional experience, traineeships, and academic progression.
 - **Premium Glassmorphism Design**: High-fidelity dark theme featuring neon gradients, responsive layouts, custom load screens, and interactive micro-animations.
 - **Resume Download Integration**: Direct download option for the latest PDF resume.
